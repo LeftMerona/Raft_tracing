@@ -1,41 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Character_Movement : MonoBehaviour
 {
-    public float speed = 10f;
-    public float rotationSpeed = 100.0f;
+    public float movespeed = 1f;
 
-    [SerializeField] private string _moveAxis_name = "Vertical";
-    [SerializeField] private string _rotateAxis_name = "Horizontal";
-    [SerializeField] private float velocityX;
-    [SerializeField] private float velocityZ;
+    [SerializeField] private string _moveWSAxis_name = "Vertical";
+    [SerializeField] private string _moveADAxis_name = "Horizontal";
 
+    private Rigidbody rb;
     private Animator ani;
 
     private void Awake()
     {
         ani = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    private void Start()
-    {
-        ani.SetFloat("VelocityX", 0.5f);
-        ani.SetFloat("VelocityZ", 0.5f);
-    }
-
-
-    public float Move_Value { get; private set; }
-    public float Rotate_Value { get; private set; }
+    public float MoveWS_Value { get; private set; }
+    public float MoveAD_Value { get; private set; }
 
     private void Update()
     {
-        Move_Value = Input.GetAxis(_moveAxis_name);
-        Rotate_Value = Input.GetAxis(_rotateAxis_name);
+        MovePosition();
 
-        ani.SetFloat("VelocityX", Move_Value);
-        ani.SetFloat("VelocityZ", Rotate_Value);
+        rb.velocity = Vector3.zero;
     }
+
+
+    private void MovePosition()
+    {
+        MoveWS_Value = Input.GetAxis(_moveWSAxis_name);
+        MoveAD_Value = Input.GetAxis(_moveADAxis_name);
+
+        var movedir = new Vector3(MoveAD_Value, 0, MoveWS_Value).normalized * movespeed * Time.deltaTime;
+
+        if (MoveWS_Value > 0 || MoveWS_Value < 0 || MoveAD_Value > 0 || MoveAD_Value < 0)
+        {
+            ani.SetFloat("VelocityX", MoveAD_Value);
+            ani.SetFloat("VelocityZ", MoveWS_Value);
+        }
+
+        rb.MovePosition(transform.position + (transform.forward * movedir.z) + (transform.right * movedir.x));
+    }
+
 
 }
