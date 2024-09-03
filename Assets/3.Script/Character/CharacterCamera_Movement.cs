@@ -1,49 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class CharacterCamera_Movement : MonoBehaviour
 {
-    public float rotationSpeed = 100.0f;
+    public float rotationSpeed = 10f;
 
     [SerializeField] private float _mouseX;
     [SerializeField] private float _mouseY;
-    [SerializeField] private GameObject chest;
-    [SerializeField] private GameObject cameraobj;
+    [SerializeField] private GameObject head;
 
-    private Rigidbody rb;
     private Animator ani;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
         ani = GetComponent<Animator>();
-    }
 
-    private void Update()
-    {
-        MoveMousePosition();
-    }
-
-    private void MoveMousePosition()
-    {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.lockState = CursorLockMode.Confined;
 
+    }
+
+    private void Update()
+    {
         _mouseX = Input.GetAxis("Mouse X");
         _mouseY = Input.GetAxis("Mouse Y");
+    }
 
-        float yRotate = Mathf.Clamp(_mouseX, -70, 70);
+    private void LateUpdate()
+    {
+       MoveMousePosition();
+    }
 
-        var mouseDir = new Vector2(_mouseY, yRotate) * rotationSpeed * Time.deltaTime;
+    private void MoveMousePosition()
+    {
+        float dir = -_mouseY * rotationSpeed * Time.deltaTime;
+        float yrotate = Mathf.Clamp(dir, -60, 50);
 
-
-
-        //   chest.transform.Rotate(_mouseX, 0, 0);
-        chest.transform.Rotate(mouseDir.x, mouseDir.y, 0);
-
-        
+        // -60 50 
+        transform.Rotate(0, _mouseX, 0);
+        head.transform.Rotate( 0, yrotate , 0);
+        head.transform.eulerAngles.Set(0, Mathf.Clamp(transform.eulerAngles.y, -60, 50), 0);
     }
 
 

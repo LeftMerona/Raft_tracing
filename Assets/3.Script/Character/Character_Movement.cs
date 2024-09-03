@@ -13,8 +13,11 @@ public class Character_Movement : MonoBehaviour
     private Rigidbody rb;
     private Animator ani;
 
+    private bool isGround;
+
     private void Awake()
     {
+        isGround = true;
         ani = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
@@ -29,7 +32,6 @@ public class Character_Movement : MonoBehaviour
         rb.velocity = Vector3.zero;
     }
 
-
     private void MovePosition()
     {
         MoveWS_Value = Input.GetAxis(_moveWSAxis_name);
@@ -37,7 +39,7 @@ public class Character_Movement : MonoBehaviour
 
         var movedir = new Vector3(MoveAD_Value, 0, MoveWS_Value).normalized * movespeed * Time.deltaTime;
 
-        if (MoveWS_Value > 0 || MoveWS_Value < 0 || MoveAD_Value > 0 || MoveAD_Value < 0)
+        if (isGround)
         {
             ani.SetFloat("VelocityX", MoveAD_Value);
             ani.SetFloat("VelocityZ", MoveWS_Value);

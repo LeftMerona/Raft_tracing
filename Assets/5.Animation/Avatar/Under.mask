@@ -8,4 +8,476 @@ AvatarMask:
   m_PrefabAsset: {fileID: 0}
   m_Name: Under
   m_Mask: 00000000000000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000
-  m_Elements: []
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armor_Leather_Boots
+    m_Weight: 1
+  - m_Path: Armor_Leather_Chest
+    m_Weight: 1
+  - m_Path: Armor_Leather_Helmet
+    m_Weight: 1
+  - m_Path: Equipment_Backpack
+    m_Weight: 1
+  - m_Path: Equipment_Backpack_Advanced
+    m_Weight: 1
+  - m_Path: Equipment_Flipper
+    m_Weight: 1
+  - m_Path: Equipment_OxygenBottle
+    m_Weight: 1
+  - m_Path: Female_Arm_FP
+    m_Weight: 1
+  - m_Path: Female_Body
+    m_Weight: 1
+  - m_Path: Female_Body/Female_Rope
+    m_Weight: 1
+  - m_Path: Female_Hair_Full
+    m_Weight: 1
+  - m_Path: Hazmat_Body
+    m_Weight: 1
+  - m_Path: Hazmat_FP
+    m_Weight: 1
+  - m_Path: Main Camera
+    m_Weight: 1
+  - m_Path: Skeleton
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/DEF-hips
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/DEF-hips/DEF-Flap_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/DEF-hips/DEF-Flap_L/DEF-Flap02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/DEF-hips/DEF-Flap_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/DEF-hips/DEF-Flap_R/DEF-Flap02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/DEF-spine
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/DEF-spine/IncapacitatedCollider
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/DEF-chest
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/EntityCollider_Chest
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/DEF-neck
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/CameraHolder
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Eye_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Eye_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Eyebrow1_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Eyebrow1_L/DEF-Eyebrow2_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Eyebrow1_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Eyebrow1_R/DEF-Eyebrow2_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-LowerEyelid_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-LowerEyelid_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Mouth1_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Mouth1_L/DEF-Mouth2_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Mouth1_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-Mouth1_R/DEF-Mouth2_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-UpperEyelid_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/DEF-UpperEyelid_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/EntityCollider_Head
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/Eye_Aim
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/Eye_Aim/Eye_IK_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/Eye_Aim/Eye_IK_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_AnglerFish_Local
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_AnglerFish_Local/Spotlight_HeadLight.002
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_AnglerFish_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_AnglerFish_Remote/Spotlight_HeadLight.003
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_BearHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_BearMamaHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_BoarHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_CaptainsHat_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Chef_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_ConstructionHelmet_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_DevHat_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_DevHat_Remote/DevHat
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_DevHat_Remote/DevHat/Cylinder
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_DevHat_Remote/DevHat/Cylinder.001
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_DevHat_Remote/DevHat/Cylinder.002
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_DevHat_Remote/DevHat/Sphere
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Diving_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Fishing_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Glasses_Aviator_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Glasses_Disguise_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_HyenaBossHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_HyenaHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_MayorHat_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Pilot_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Pirate_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_PoisonPuffer_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_PolarBearHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Sailor_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Screecher_Caravan_Local
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Screecher_Caravan_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Screecher_Local
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_Screecher_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_SharkHead_Local
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_SharkHead_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/Hat_TikiMask_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLight_Local
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLight_Local/Spotlight_HeadLight
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLight_Local/Spotlight_HeadLight/Spotlight_HeadLight_Orientation
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLight_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLight_Remote/Headlight_SpotlightParent_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLightAdvanced_Local
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLightAdvanced_Local/Spotlight_HeadLight.001
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLightAdvanced_Local/Spotlight_HeadLight.001/Spotlight_HeadLight_Orientation.001
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLightAdvanced_Remote
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/DEF-head/HatParent/HeadLightAdvanced_Remote/Headlight_SpotlightParent_Remote.001
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/DEF-shoulder_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/DEF-upper_arm_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/DEF-upper_arm_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/EntityCollider_Arm_Upper_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/DEF-forearm_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/DEF-forearm_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/EntityCollider_Arm_Lower_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/DEF-hand_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/DEF-hand_L/DEF-ItemHold_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/DEF-hand_L/DEF-ItemHold_L/HookRope_Pivot
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/DEF-hand_L/EntityCollider_Hand_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/DEF-palm_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L/DEF-f_index_01_L_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L/DEF-f_index_01_L_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L/ORG-f_index_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L/ORG-f_index_02_L/DEF-f_index_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L/ORG-f_index_02_L/ORG-f_index_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-f_index_01_L/ORG-f_index_02_L/ORG-f_index_03_L/DEF-f_index_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L/DEF-thumb_01_L_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L/DEF-thumb_01_L_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L/ORG-thumb_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L/ORG-thumb_02_L/DEF-thumb_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L/ORG-thumb_02_L/ORG-thumb_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_01_L/ORG-thumb_01_L/ORG-thumb_02_L/ORG-thumb_03_L/DEF-thumb_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/DEF-palm_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L/DEF-f_middle_01_L_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L/DEF-f_middle_01_L_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L/ORG-f_middle_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L/ORG-f_middle_02_L/DEF-f_middle_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L/ORG-f_middle_02_L/ORG-f_middle_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_02_L/ORG-f_middle_01_L/ORG-f_middle_02_L/ORG-f_middle_03_L/DEF-f_middle_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/DEF-palm_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L/DEF-f_ring_01_L_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L/DEF-f_ring_01_L_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L/ORG-f_ring_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L/ORG-f_ring_02_L/DEF-f_ring_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L/ORG-f_ring_02_L/ORG-f_ring_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_03_L/ORG-f_ring_01_L/ORG-f_ring_02_L/ORG-f_ring_03_L/DEF-f_ring_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/DEF-palm_04_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L/DEF-f_pinky_01_L_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L/DEF-f_pinky_01_L_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L/ORG-f_pinky_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L/ORG-f_pinky_02_L/DEF-f_pinky_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L/ORG-f_pinky_02_L/ORG-f_pinky_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_L/ORG-upper_arm_L/ORG-forearm_L/ORG-hand_L/ORG-palm_04_L/ORG-f_pinky_01_L/ORG-f_pinky_02_L/ORG-f_pinky_03_L/DEF-f_pinky_03_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/DEF-shoulder_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/DEF-upper_arm_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/DEF-upper_arm_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/EntityCollider_Arm_Upper_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/DEF-forearm_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/DEF-forearm_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/EntityCollider_Arm_Lower_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/DEF-hand_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/DEF-hand_R/DEF-ItemHold_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/DEF-hand_R/EntityCollider_Hand_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/DEF-palm_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R/DEF-f_index_01_R_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R/DEF-f_index_01_R_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R/ORG-f_index_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R/ORG-f_index_02_R/DEF-f_index_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R/ORG-f_index_02_R/ORG-f_index_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-f_index_01_R/ORG-f_index_02_R/ORG-f_index_03_R/DEF-f_index_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R/DEF-thumb_01_R_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R/DEF-thumb_01_R_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R/ORG-thumb_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R/ORG-thumb_02_R/DEF-thumb_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R/ORG-thumb_02_R/ORG-thumb_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_01_R/ORG-thumb_01_R/ORG-thumb_02_R/ORG-thumb_03_R/DEF-thumb_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/DEF-palm_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R/DEF-f_middle_01_R_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R/DEF-f_middle_01_R_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R/ORG-f_middle_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R/ORG-f_middle_02_R/DEF-f_middle_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R/ORG-f_middle_02_R/ORG-f_middle_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_02_R/ORG-f_middle_01_R/ORG-f_middle_02_R/ORG-f_middle_03_R/DEF-f_middle_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/DEF-palm_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R/DEF-f_ring_01_R_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R/DEF-f_ring_01_R_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R/ORG-f_ring_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R/ORG-f_ring_02_R/DEF-f_ring_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R/ORG-f_ring_02_R/ORG-f_ring_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_03_R/ORG-f_ring_01_R/ORG-f_ring_02_R/ORG-f_ring_03_R/DEF-f_ring_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/DEF-palm_04_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R/DEF-f_pinky_01_R_01
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R/DEF-f_pinky_01_R_02
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R/ORG-f_pinky_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R/ORG-f_pinky_02_R/DEF-f_pinky_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R/ORG-f_pinky_02_R/ORG-f_pinky_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder_R/ORG-upper_arm_R/ORG-forearm_R/ORG-hand_R/ORG-palm_04_R/ORG-f_pinky_01_R/ORG-f_pinky_02_R/ORG-f_pinky_03_R/DEF-f_pinky_03_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/DEF-thigh_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/DEF-thigh_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/EntityCollider_Thigh_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/DEF-shin_01_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/DEF-shin_02_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/EntityCollider_Shin_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/ORG-foot_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/ORG-foot_L/DEF-foot_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/ORG-foot_L/ORG-toe_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_L/ORG-shin_L/ORG-foot_L/ORG-toe_L/DEF-toe_L
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/DEF-thigh_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/DEF-thigh_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/EntityCollider_Thigh_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/DEF-shin_01_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/DEF-shin_02_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/EntityCollider_Shin_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/ORG-foot_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/ORG-foot_R/DEF-foot_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/ORG-foot_R/ORG-toe_R
+    m_Weight: 1
+  - m_Path: Skeleton/ORG-hips/ORG-thigh_R/ORG-shin_R/ORG-foot_R/ORG-toe_R/DEF-toe_R
+    m_Weight: 1
