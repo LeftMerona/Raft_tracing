@@ -5,6 +5,10 @@ using UnityEngine;
 public class CursorManager : MonoBehaviour
 {
 
+    private void Start()
+    {
+        StartGameSursorSet();
+    }
 
     public void StartGameSursorSet()
     {

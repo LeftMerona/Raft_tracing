@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Character_Movement : MonoBehaviour
+public class Player_Movement : MonoBehaviour
 {
     public float movespeed = 1f;
 
@@ -28,8 +29,6 @@ public class Character_Movement : MonoBehaviour
     private void Update()
     {
         MovePosition();
-
-        rb.velocity = Vector3.zero;
     }
 
     private void MovePosition()
@@ -40,9 +39,13 @@ public class Character_Movement : MonoBehaviour
         var movedir = new Vector3(MoveAD_Value, 0, MoveWS_Value).normalized * movespeed * Time.deltaTime;
 
         if (isGround)
-        {
+        { // 육지라면 
             ani.SetFloat("VelocityX", MoveAD_Value);
             ani.SetFloat("VelocityZ", MoveWS_Value);
+        }
+        else
+        { // 바다라면?
+
         }
 
         rb.MovePosition(transform.position + (transform.forward * movedir.z) + (transform.right * movedir.x));
