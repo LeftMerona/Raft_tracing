@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class Player_State : MonoBehaviour
 {
+    [SerializeField] GameObject _RightHand;
+
     private Animator animator;
-
+    private Rigidbody rb;
     private bool isJump;
+    private int _ItemID;
+    
 
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void Update()
     {
@@ -15,12 +23,19 @@ public class Player_State : MonoBehaviour
         {
             Jump();
         }
+
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+             
+        }
+
     }
 
     private void Jump()
     {
         isJump = true;
-        transform.Translate(Vector3.up * 5f * Time.deltaTime);
+        rb.MovePosition(transform.position + Vector3.up * 30f * Time.deltaTime);
+
         isJump = false;
     }
 }
