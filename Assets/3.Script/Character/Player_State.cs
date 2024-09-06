@@ -14,6 +14,7 @@ public class Player_State : MonoBehaviour
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -33,9 +34,13 @@ public class Player_State : MonoBehaviour
 
     private void Jump()
     {
+        animator.SetTrigger("JumpStart");
         isJump = true;
-        rb.MovePosition(transform.position + Vector3.up * 30f * Time.deltaTime);
+        rb.AddForce(Vector3.up * 15f , ForceMode.Impulse);
+        animator.SetBool("isGound", false);        
 
         isJump = false;
     }
+
+     
 }

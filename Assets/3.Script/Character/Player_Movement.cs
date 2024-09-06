@@ -26,7 +26,7 @@ public class Player_Movement : MonoBehaviour
     public float MoveWS_Value { get; private set; }
     public float MoveAD_Value { get; private set; }
 
-    private void Update()
+    private void LateUpdate()
     {
         MovePosition();
     }
