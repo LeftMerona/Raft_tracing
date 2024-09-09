@@ -21,7 +21,7 @@ public class Player_CameraMovement : MonoBehaviour
         _mouseX = Input.GetAxis("Mouse X");
         _mouseY = Input.GetAxis("Mouse Y");
 
-     //   maincamera.transform.position = camerapivot.transform.position;
+
         MoveMousePosition();
     }
 
@@ -35,7 +35,6 @@ public class Player_CameraMovement : MonoBehaviour
         
         head_camerapivot.transform.localRotation = Quaternion.Euler(0, currentHeadRotation, 0); // ∏”∏Æ Y √‡
         maincamera.transform.localRotation = Quaternion.Euler(currentHeadRotation, _mouseX, 0);
-
     }
 
 

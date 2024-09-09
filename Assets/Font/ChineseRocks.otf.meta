@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: d48a266b46fe42a49ad55166b2e67587
+timeCreated: 1724837267
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  externalObjects: {}
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Chinese Rocks
+  fontNames:
+  - Chinese Rocks
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:
