@@ -10,37 +10,59 @@ public class Player_State : MonoBehaviour
     private Rigidbody rb;
     private bool isJump;
     private int _ItemID;
-    
+
+    private bool isGround;
+    private Vector3 rayshoot = new Vector3(0, -0.5f, 0);
 
     private void Awake()
     {
+        isGround = true;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && !isJump)
+        //아래로 레이쏘며 바다인지 땅인지
+        CheckGround();
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && !isJump)
         {
             Jump();
         }
 
         if (Input.GetKey(KeyCode.Mouse0))
         {
-             
+
         }
 
     }
 
     private void Jump()
     {
-        animator.SetTrigger("JumpStart");
         isJump = true;
-        rb.AddForce(Vector3.up * 15f , ForceMode.Impulse);
-        animator.SetBool("isGound", false);        
+        animator.SetBool("isGround", false);
+        animator.SetTrigger("JumpStart");
+        rb.AddForce(Vector3.up * 3.5f, ForceMode.Impulse);
 
         isJump = false;
+        animator.SetBool("isGround", true);
     }
 
-     
+
+    private void CheckGround()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, rayshoot, out hit))
+        {
+            Debug.DrawRay(transform.position, rayshoot, Color.red);
+            if (hit.collider != null)
+            {
+                Debug.Log(hit.collider.gameObject.name);
+            }
+        }
+    }
+
 }
