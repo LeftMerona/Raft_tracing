@@ -46,8 +46,7 @@ public class Player_State : MonoBehaviour
         animator.SetTrigger("JumpStart");
         rb.AddForce(Vector3.up * 3.5f, ForceMode.Impulse);
 
-        isJump = false;
-        animator.SetBool("isGround", true);
+       
     }
 
 
