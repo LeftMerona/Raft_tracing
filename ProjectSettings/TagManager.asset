@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Entity_Chest
   - Entity_Head
+  - InventoryParent
+  - Ocean
+  - Floor
   layers:
   - Default
   - TransparentFX

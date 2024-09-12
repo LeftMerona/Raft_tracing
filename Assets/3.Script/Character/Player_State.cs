@@ -1,52 +1,105 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Player_State : MonoBehaviour
 {
-    [SerializeField] GameObject _RightHand;
-
     private Animator animator;
     private Rigidbody rb;
-    private bool isJump;
+    public Rigidbody PlayerRigidbody { get => rb; set => rb = value; }
     private int _ItemID;
 
-    private bool isGround;
+    protected bool isJump = false;
+    public bool IsJump { get => isJump; set => isJump = value; }
+    protected bool isGround = true;
+    public bool IsGround { get => isGround; set => isGround = value; }
+    private bool isOcean = false;
+    public bool IsOcean { get => isOcean; set => isOcean = value; }
+    protected bool isAir = false; 
+
+    protected string Ocean;
     private Vector3 rayshoot = new Vector3(0, -0.5f, 0);
 
-    private void Awake()
+    public virtual void Awake()
     {
-        isGround = true;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        //아래로 레이쏘며 바다인지 땅인지
-        CheckGround();
+        //아래로 레이쏘며 바다인지 땅인지? enter  exit로 처리 
+        // CheckGround();
 
-
-        if (Input.GetKeyDown(KeyCode.Space) && !isJump)
+        if (!isOcean) // 바다 아닐때 
         {
-            Jump();
+            if (Input.GetKeyDown(KeyCode.Space) && !isJump)
+            {
+                StartCoroutine(Jump_co());
+            }
+
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+
+            }
+        }
+        else if (isOcean) // isair도 잇어서 
+        {
+
         }
 
-        if (Input.GetKey(KeyCode.Mouse0))
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
         {
-
+            Debug.Log("Eneter;");
+            isGround = true;
+            isJump = false;
         }
+    }
 
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            Debug.Log("Eexit");
+            isGround = false;
+        }
+    }
+
+    private IEnumerator Jump_co()
+    {
+        isJump = true;
+        if (animator != null)
+        {
+            animator.SetBool("isGround", !isGround);
+            animator.SetTrigger("JumpStart");
+        }      
+        rb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
+
+        yield return null;
+        animator.SetBool("isGround", isGround);
     }
 
     private void Jump()
     {
         isJump = true;
-        animator.SetBool("isGround", false);
-        animator.SetTrigger("JumpStart");
-        rb.AddForce(Vector3.up * 3.5f, ForceMode.Impulse);
+        if(animator != null)
+        {
+            animator.SetBool("isGround", false);
+            animator.SetTrigger("JumpStart");
+        }
 
-       
+        rb.AddForce(Vector3.up * 3.5f, ForceMode.Impulse);   
+        if(transform.position.y < 0.1f)
+        {
+            isJump = false;
+        }
+
     }
 
 
@@ -62,6 +115,12 @@ public class Player_State : MonoBehaviour
                 Debug.Log(hit.collider.gameObject.name);
             }
         }
+    }
+
+
+    public void SetPlayerRigidBody()
+    {
+        rb.useGravity = !rb.useGravity;
     }
 
 }

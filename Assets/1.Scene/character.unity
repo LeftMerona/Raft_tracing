@@ -135,9 +135,11 @@ GameObject:
   - component: {fileID: 85494736}
   - component: {fileID: 85494735}
   - component: {fileID: 85494734}
+  - component: {fileID: 85494738}
+  - component: {fileID: 85494739}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ocean
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,10 +152,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85494733}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &85494735
@@ -219,6 +221,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &85494738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85494733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7324f3831415f43a0358edbfc721f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &85494739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85494733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &203436443
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +546,7 @@ GameObject:
   - component: {fileID: 461538258}
   m_Layer: 0
   m_Name: Foundation (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,8 +559,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461538257}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.7, z: 1.5}
   m_Center: {x: 0, y: -0.35, z: 0}
@@ -1149,7 +1176,7 @@ GameObject:
   - component: {fileID: 1151423617}
   m_Layer: 0
   m_Name: Foundation (3)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1162,8 +1189,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151423616}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.7, z: 1.5}
   m_Center: {x: 0, y: -0.35, z: 0}
@@ -1322,7 +1349,7 @@ GameObject:
   - component: {fileID: 1861686707}
   m_Layer: 0
   m_Name: Foundation (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1335,8 +1362,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861686706}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.7, z: 1.5}
   m_Center: {x: 0, y: -0.35, z: 0}
@@ -9166,7 +9193,7 @@ GameObject:
   - component: {fileID: 2052343096276996195}
   m_Layer: 0
   m_Name: Character_Maya
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9213,7 +9240,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052343096276996192}
   serializedVersion: 2
-  m_Mass: 30
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -9251,7 +9278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bc6c663833f444eb183540149f5e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RightHand: {fileID: 0}
 --- !u!1 &2052351206824286640
 GameObject:
   m_ObjectHideFlags: 0
@@ -12933,7 +12959,7 @@ GameObject:
   - component: {fileID: 4984970179265816926}
   m_Layer: 0
   m_Name: Foundation
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12946,8 +12972,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4984970179265816925}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.7, z: 1.5}
   m_Center: {x: 0, y: -0.35, z: 0}

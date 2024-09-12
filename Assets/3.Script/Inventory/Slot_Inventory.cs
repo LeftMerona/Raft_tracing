@@ -9,14 +9,12 @@ public class Slot_Inventory : MonoBehaviour
     [SerializeField] private Text _amount;
     [SerializeField] private float _durability;
 
-    private string 
-
     private Text _displayitemName;
     private Text _displayiteminfo;
 
 
     private void OnMouseEnter()
     {
-        _displayitemName =
+      
     }
 }
