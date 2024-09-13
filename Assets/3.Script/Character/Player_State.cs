@@ -34,13 +34,14 @@ public class Player_State : MonoBehaviour
 
         if (!isOcean) // ¹Ù´Ù ¾Æ´Ò¶§ 
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !isJump)
+            if (Input.GetKeyDown(KeyCode.Space) && isGround)
             {
                 StartCoroutine(Jump_co());
             }
 
             if (Input.GetKey(KeyCode.Mouse0))
             {
+                //
 
             }
         }
@@ -52,37 +53,21 @@ public class Player_State : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Floor"))
-        {
-            Debug.Log("Eneter;");
-            isGround = true;
-            isJump = false;
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Floor"))
-        {
-            Debug.Log("Eexit");
-            isGround = false;
-        }
-    }
 
     private IEnumerator Jump_co()
     {
         isJump = true;
+        isGround = false;
         if (animator != null)
         {
-            animator.SetBool("isGround", !isGround);
+            animator.SetBool("isGround", isGround);
             animator.SetTrigger("JumpStart");
         }      
         rb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
 
-        yield return null;
-        animator.SetBool("isGround", isGround);
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("isGround", true);
+        isGround = true;
     }
 
     private void Jump()

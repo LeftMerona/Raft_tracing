@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PaintbrushBlob
+  m_Shader: {fileID: 4800000, guid: 14302593648dc7547ad7fa08f0c1057c, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _UVSWITCH_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+      _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 643c752e55f7aed4aa1b8fb85dc1d9a1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _Emission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _MetallicRPaintMaskGSmoothnessA:
+        m_Texture: {fileID: 2800000, guid: 655c3f71f21996c40af9a88c7ece0abd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _Normal:
+        m_Texture: {fileID: 2800000, guid: 479e299f98bcec640a41f9500fcc605b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _PatternArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+      _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+      _BumpScale: 1
+      _Cutoff: 0.907
+      _DecoPaintSelect: 0
+      _Destroy_Overlay: 0
+      _DetailNormalMapScale: 1
+      _DstBlend: 0
+      _EmissionMultiplier: 1
+      _EmissionSwitch: 0.867
+      _GlossMapScale: 1
+      _Glossiness: 0.5
+      _GlossyReflections: 1
+      _GreenChannelMultiply: 0
+      _Metallic: 0
+      _Mode: 1
+      _OcclusionStrength: 1
+      _PaintMaskOverride: 1
+      _PaintSide: 0.86
+      _Parallax: 0.02
+      _Pattern1_MaskFlip: 1
+      _Pattern1_Masked: 1
+      _Pattern2_MaskFlip: 1
+      _Pattern2_Masked: 1
+      _Pattern_Index1: 0
+      _Pattern_Index2: 0
+      _RedChannelMultiply: 0
+      _SmoothnessTextureChannel: 0
+      _SpecularHighlights: 1
+      _SrcBlend: 1
+      _TapestryTiling: 1
+      _TriplanarFalloff: 1
+      _UVSec: 0
+      _UVSwitch: 1
+      _UV_VertexPos_Switch: 0
+      _Waves: 4.774876
+      _WindSpeed: 0
+      _XMultiplier: 0.5
+      _YMultiplier: 0.5
+      _ZMultiplier: 0.5
+      _ZWrite: 1
+      __dirty: 0
+    m_Colors:
+      _BuildingEmission: {r: 0, g: 0, b: 0, a: 0}
+      _Color: {r: 1, g: 1, b: 1, a: 1}
+      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+      _Side1_Base: {r: 1, g: 1, b: 1, a: 0}
+      _Side1_Pattern: {r: 1, g: 1, b: 1, a: 0}
+      _Side2_Base: {r: 0, g: 0, b: 0, a: 0}
+      _Side2_Pattern: {r: 0, g: 0, b: 0, a: 0}
