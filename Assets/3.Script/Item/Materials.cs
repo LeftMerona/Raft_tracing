@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Materials : MonoBehaviour
-{    
-    public string mName;
-    public string mInfo;
-    public GameObject mObj;
-        
+public class Materials : ScriptableObject
+{
+    public string _img_name;
+    public string _name_kr;
+    public HandAction _handAction;
+    public bool _stackable;
+    public int _maxstack;
+    public bool _durability;
+    public string _description;
 }
    

@@ -10,6 +10,9 @@ public class Player_State : MonoBehaviour
     public Rigidbody PlayerRigidbody { get => rb; set => rb = value; }
     private int _ItemID;
 
+    private bool isHand = false;
+    public bool IsHand { get => isHand; set => isHand = value; }
+
     protected bool isJump = false;
     public bool IsJump { get => isJump; set => isJump = value; }
     protected bool isGround = true;

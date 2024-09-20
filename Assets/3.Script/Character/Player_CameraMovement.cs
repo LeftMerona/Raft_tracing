@@ -32,7 +32,7 @@ public class Player_CameraMovement : MonoBehaviour
 
         // 카메라 돌릴때 얼굴 부분도 같이 
         transform.Rotate(0, _mouseX, 0); // 몸 수평 Y 축 
-        
+
         head_camerapivot.transform.localRotation = Quaternion.Euler(0, currentHeadRotation, 0); // 머리 Y 축
         maincamera.transform.localRotation = Quaternion.Euler(currentHeadRotation, _mouseX, 0);
     }
