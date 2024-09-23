@@ -13,17 +13,29 @@ public class UI_SlotSpace : MonoBehaviour
     // 이건 틀만 있고  각각 상위 오브젝트에서 관리 해주는? 
 
 
-    [SerializeField] private Image _itemImage; // 이미지 
-    [SerializeField] private Text _amount;     // _stackable이 true 라면 
-    private bool _durability;
-    [SerializeField] private float _durabilityValue; // 내구도 흠.. 테스트차 10 으로 
+    [SerializeField] private GameObject slot_Image;
+    [SerializeField] private GameObject slot_AmountText;
+    [SerializeField] private GameObject slot_Sliderdurability;
+    private RectTransform slot_pos;
+    public RectTransform slot_Position { get => slot_pos; }
 
     private Text _displayitemName;
     private Text _displayiteminfo;
 
 
-    private void OnMouseEnter()
+    private bool isTabOpen = false;
+
+    public void InitSlot()
     {
-      
+        slot_Image = transform.GetChild(0).gameObject;
+        slot_AmountText = transform.GetChild(1).gameObject;
+        slot_Sliderdurability = transform.GetChild(2).gameObject;
+        slot_pos = transform.GetComponent<RectTransform>();
+
+        slot_Image.SetActive(false);
+        slot_AmountText.SetActive(false);
+        slot_Sliderdurability.SetActive(false);
     }
+
+
 }

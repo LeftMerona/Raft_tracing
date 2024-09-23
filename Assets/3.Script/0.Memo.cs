@@ -163,4 +163,14 @@ exit은 바다에서 나올때
 캘수있는거 Pickup 으로 정리 되있음 
  
  
+
+
+
+
+
+UI 할때 Recttransform이 제대로 업데이트가 안됬다.
+
+FixedUpdate로 올리거나 업데이트 후에 올리니 해결 됬다 
+
+
  */

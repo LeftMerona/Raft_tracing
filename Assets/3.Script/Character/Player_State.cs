@@ -37,7 +37,7 @@ public class Player_State : MonoBehaviour
 
         if (!isOcean) // ¹Ù´Ù ¾Æ´Ò¶§ 
         {
-            if (Input.GetKeyDown(KeyCode.Space) && isGround)
+            if (Input.GetKey(KeyCode.Space) && isGround)
             {
                 StartCoroutine(Jump_co());
             }
