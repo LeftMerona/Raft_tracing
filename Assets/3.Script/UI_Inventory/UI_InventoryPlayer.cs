@@ -8,19 +8,34 @@ public class UI_InventoryPlayer : MonoBehaviour
 
     // 이거따로 옆에 카테고리 따로 해야할듯 
     // 슬롯 온마우스오바로  hover하고 
-    // 이건 배열 해도 될거같고 리스트는 아닌거 같고 ㅇㅋ 
+    // 이건 배열 해도 될거같고 리스트는 아닌거 같고 ㅇㅋ     
 
     [SerializeField] GameObject selectionSlot;
 
     private UI_SlotSpace[] inventoryslots;
+    [SerializeField] private UI_Hotbar hotbar; 
 
     private int currentindex = 0;
 
     private void Awake()
     {
-        inventoryslots = new UI_SlotSpace[15];
+        InitInventory();        
+    }
 
-         
+
+
+
+    
+
+    private void InitInventory()
+    {
+        inventoryslots = new UI_SlotSpace[15];
+        for (int i = 0; i < inventoryslots.Length; i++)
+        {
+            inventoryslots[i] = hotbar.transform.GetChild(i).gameObject.AddComponent<UI_SlotSpace>();
+            inventoryslots[i].InitSlot();
+        }
+        hotbar = FindObjectOfType<UI_Hotbar>();
     }
 
 }

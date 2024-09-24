@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class Player_CameraMovement : MonoBehaviour
 {
-    [SerializeField] private float _mouseX;
-    [SerializeField] private float _mouseY;
+    [SerializeField] private CursorManager cursorManager;
+    private float _mouseX;
+    private float _mouseY;
     [SerializeField] private GameObject head_camerapivot;
     [SerializeField] private GameObject maincamera;
 
@@ -14,15 +15,15 @@ public class Player_CameraMovement : MonoBehaviour
     [SerializeField] private GameObject armsObj;
 
     private float currentHeadRotation = 0f;
-
-    private void LateUpdate()
+    private void Update()
     {
-        // X 수평 Y 수직 
-        _mouseX = Input.GetAxis("Mouse X");
-        _mouseY = Input.GetAxis("Mouse Y");
-
-
-        MoveMousePosition();
+        if (!cursorManager.IsOpen)
+        {
+            // X 수평 Y 수직 
+            _mouseX = Input.GetAxis("Mouse X");
+            _mouseY = Input.GetAxis("Mouse Y");
+            MoveMousePosition();
+        }
     }
 
     private void MoveMousePosition()

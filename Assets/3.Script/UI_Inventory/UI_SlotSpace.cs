@@ -22,7 +22,6 @@ public class UI_SlotSpace : MonoBehaviour
     private Text _displayitemName;
     private Text _displayiteminfo;
 
-
     private bool isTabOpen = false;
 
     public void InitSlot()

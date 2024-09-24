@@ -10,18 +10,13 @@ public class UI_Hotbar : MonoBehaviour
     [SerializeField] GameObject selectionSlot;
 
     private UI_SlotSpace[] hotbarSlots;
+    public UI_SlotSpace[] HotbarSlots { get => hotbarSlots; }
 
     private int currentindex = 0;
 
     private void Awake()
     {
-        hotbarSlots = new UI_SlotSpace[10];
-
-        for (int i = 0; i < hotbarSlots.Length; i++)
-        {
-            hotbarSlots[i] = hotbar.transform.GetChild(i).gameObject.AddComponent<UI_SlotSpace>();
-            hotbarSlots[i].InitSlot();
-        }
+        InitHotbar();
 
     }
 
@@ -47,6 +42,17 @@ public class UI_Hotbar : MonoBehaviour
        selectionSlot.transform.position = hotbarSlots[currentindex].slot_Position.position;
     }
 
+
+    private void InitHotbar()
+    {
+        hotbarSlots = new UI_SlotSpace[10];
+
+        for (int i = 0; i < hotbarSlots.Length; i++)
+        {
+            hotbarSlots[i] = hotbar.transform.GetChild(i).gameObject.AddComponent<UI_SlotSpace>();
+            hotbarSlots[i].InitSlot();
+        }
+    }
 
 
 }

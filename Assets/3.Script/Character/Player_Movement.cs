@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Player_Movement : MonoBehaviour
 {
+
     public float movespeed = 1f;
 
     [SerializeField] private string _moveWSAxis_name = "Vertical";
@@ -17,6 +18,7 @@ public class Player_Movement : MonoBehaviour
     private Rigidbody rb;
     private Animator ani;
 
+    
 
     private void Awake()
     {
