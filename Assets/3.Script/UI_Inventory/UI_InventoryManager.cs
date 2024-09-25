@@ -11,14 +11,14 @@ public class UI_InventoryManager : MonoBehaviour
 
     [SerializeField] private CursorManager cursorManager;
 
-    private void Awake()
+
+    private void Start()
     {
         if (inventoryPlayer.gameObject.activeSelf)
         {
             inventoryPlayer.gameObject.SetActive(false);
             craftmenu.SetActive(false);
         }
-
     }
 
     private void Update()
@@ -42,7 +42,8 @@ public class UI_InventoryManager : MonoBehaviour
         {
             inventoryPlayer.gameObject.SetActive(true);
             craftmenu.SetActive(true);
-            cursorManager.OpenInventoryCursorSet(); 
+            cursorManager.OpenInventoryCursorSet();
+            
         }
     }
 }

@@ -12,13 +12,9 @@ public class UI_Hotbar : MonoBehaviour
     private UI_SlotSpace[] hotbarSlots;
     public UI_SlotSpace[] HotbarSlots { get => hotbarSlots; }
 
+
     private int currentindex = 0;
 
-    private void Awake()
-    {
-        InitHotbar();
-
-    }
 
     private void Update()
     {
@@ -43,7 +39,7 @@ public class UI_Hotbar : MonoBehaviour
     }
 
 
-    private void InitHotbar()
+    public void InitHotbar()
     {
         hotbarSlots = new UI_SlotSpace[10];
 
