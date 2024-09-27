@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: IronOre
   m_EditorClassIdentifier: 
+  _id: 109
   _img_name: IronOre
   _name_kr: "\uAE08\uC18D \uAD11\uBB3C"
   _handAction: 0

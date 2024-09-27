@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Plastic
   m_EditorClassIdentifier: 
+  _id: 102
   _img_name: Plastic
   _name_kr: "\uD50C\uB77C\uC2A4\uD2F1"
   _handAction: 0

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Rock
   m_EditorClassIdentifier: 
+  _id: 104
   _img_name: Rock
   _name_kr: "\uB3CC"
   _handAction: 0

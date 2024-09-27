@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Seavine
   m_EditorClassIdentifier: 
+  _id: 108
   _img_name: Seavine
   _name_kr: "\uD574\uCD08"
   _handAction: 0

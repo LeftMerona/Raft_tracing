@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class UI_InventoryPlayer : MonoBehaviour
 {
@@ -11,24 +12,17 @@ public class UI_InventoryPlayer : MonoBehaviour
     // 이건 배열 해도 될거같고 리스트는 아닌거 같고 ㅇㅋ     
 
     [SerializeField] GameObject selectionSlot; //넣어둬씀 
+    [SerializeField] GameObject displaySlot;
 
     private UI_SlotSpace[] inventoryslots;
     [SerializeField] private GameObject inventoryPrarent; 
     [SerializeField] private UI_Hotbar hotbar;
 
-    private List<UI_SlotSpace> slotlist;
-
-
-    private void Awake()
-    {
-        hotbar = FindObjectOfType<UI_Hotbar>();
-        hotbar.InitHotbar();
-        InitInventory();
-    }
-
     public void InitInventory()
     {
+        hotbar.InitHotbar();
         inventoryslots = new UI_SlotSpace[15];
+        
 
         for (int i = 0; i < inventoryslots.Length; i++)
         {
@@ -41,13 +35,9 @@ public class UI_InventoryPlayer : MonoBehaviour
         for (int i = 0; i < hotbar.HotbarSlots.Length; i++)
         {
             hotbar.HotbarSlots[i].SelectSlot = selectionSlot;
+            
         }
-
     }
-
-
-
-
 
 
 }

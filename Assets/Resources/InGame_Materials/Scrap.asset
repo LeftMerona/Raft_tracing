@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Scrap
   m_EditorClassIdentifier: 
+  _id: 105
   _img_name: Scrap
   _name_kr: "\uC2A4\uD06C\uB7A9"
   _handAction: 0

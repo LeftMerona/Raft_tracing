@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Plank
   m_EditorClassIdentifier: 
+  _id: 101
   _img_name: Plank
   _name_kr: "\uD310\uC790"
   _handAction: 0

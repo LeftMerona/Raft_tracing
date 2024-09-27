@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Sand
   m_EditorClassIdentifier: 
+  _id: 106
   _img_name: Sand
   _name_kr: "\uBAA8\uB798"
   _handAction: 0

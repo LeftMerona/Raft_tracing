@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: Thatch
   m_EditorClassIdentifier: 
+  _id: 103
   _img_name: Thatch
   _name_kr: "\uC57C\uC790\uB098\uBB34\uC78E"
   _handAction: 0

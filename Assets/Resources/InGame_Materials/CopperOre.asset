@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
   m_Name: CopperOre
   m_EditorClassIdentifier: 
+  _id: 110
   _img_name: CopperOre
   _name_kr: "\uAD6C\uB9AC \uC6D0\uC11D"
   _handAction: 0
