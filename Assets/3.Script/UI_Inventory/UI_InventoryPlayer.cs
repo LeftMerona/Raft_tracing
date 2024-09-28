@@ -12,7 +12,7 @@ public class UI_InventoryPlayer : MonoBehaviour
     // 이건 배열 해도 될거같고 리스트는 아닌거 같고 ㅇㅋ     
 
     [SerializeField] GameObject selectionSlot; //넣어둬씀 
-    [SerializeField] GameObject displaySlot;
+    [SerializeField] private UI_DisplayItem display;
 
     private UI_SlotSpace[] inventoryslots;
     [SerializeField] private GameObject inventoryPrarent; 
@@ -22,6 +22,7 @@ public class UI_InventoryPlayer : MonoBehaviour
     {
         hotbar.InitHotbar();
         inventoryslots = new UI_SlotSpace[15];
+        display.Init();
         
 
         for (int i = 0; i < inventoryslots.Length; i++)
@@ -29,13 +30,15 @@ public class UI_InventoryPlayer : MonoBehaviour
             inventoryslots[i] = inventoryPrarent.transform.GetChild(i + 1).gameObject.AddComponent<UI_SlotSpace>();
             inventoryslots[i].InitSlot();
             inventoryslots[i].SelectSlot = selectionSlot;
+            inventoryslots[i].Slot_Display = display;
         }
 
 
         for (int i = 0; i < hotbar.HotbarSlots.Length; i++)
         {
             hotbar.HotbarSlots[i].SelectSlot = selectionSlot;
-            
+            hotbar.HotbarSlots[i].Slot_Display = display;
+
         }
     }
 

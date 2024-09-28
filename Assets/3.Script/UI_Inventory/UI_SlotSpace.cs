@@ -32,6 +32,9 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private RectTransform slot_pos;
     public RectTransform slot_Position { get => slot_pos; }
 
+    private UI_DisplayItem slot_display;
+    public UI_DisplayItem Slot_Display { get => slot_display; set => slot_display = value; }
+
     private bool isSelect = false;
 
 
@@ -54,11 +57,11 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         selectionSlot.SetActive(true);
         selectionSlot.transform.position = transform.position;
 
-        if (eventData.pointerEnter.gameObject.transform.GetChild(0).gameObject.activeSelf)
+        Image image = slot_Image.GetComponent<Image>();
+
+        if (slot_Image.activeSelf)
         {
-  
-            
-            
+            slot_display.SetEnterDisplay(image, _mname_kr, _mdescription);
         }
     }
 
@@ -67,6 +70,11 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         isSelect = false;
         selectionSlot.SetActive(false);
         selectionSlot.transform.position = transform.position;
+
+        if (slot_Image.activeSelf)
+        {
+            slot_display.SetExitDisplay();
+        }
 
     }
 
@@ -80,12 +88,12 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         _mstackable = stack;
         _mmaxstack = maxstack;
         _mdurability = dura;
-        _mdescription  = description;
+        _mdescription = description;
 
         slot_Image.GetComponent<Image>().sprite = DataManager.Instance.SetSpriteFromNum(id);
         // slot_AmountText.GetComponent<Text>().text;
         // 이건 수량 
-        
+
     }
 
 
