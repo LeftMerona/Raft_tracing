@@ -22,15 +22,19 @@ public class Player_CameraMovement : MonoBehaviour
             // X 수평 Y 수직 
             _mouseX = Input.GetAxis("Mouse X");
             _mouseY = Input.GetAxis("Mouse Y");
-            MoveMousePosition();
+
+            currentHeadRotation -= _mouseY;
+            currentHeadRotation = Mathf.Clamp(currentHeadRotation, -90, 90);
         }
+    }
+
+    private void LateUpdate()
+    {
+        MoveMousePosition();
     }
 
     private void MoveMousePosition()
     {
-        currentHeadRotation -= _mouseY;
-        currentHeadRotation = Mathf.Clamp(currentHeadRotation, -90, 90);
-
         // 카메라 돌릴때 얼굴 부분도 같이 
         transform.Rotate(0, _mouseX, 0); // 몸 수평 Y 축 
 

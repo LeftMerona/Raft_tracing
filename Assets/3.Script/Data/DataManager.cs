@@ -13,6 +13,7 @@ public class DataManager : MonoBehaviour
 
     private Dictionary<int, Data_Material> dicData_Material;
     private Dictionary<int, Sprite> dicsprite;
+    private List<Materials> listmaterials;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class DataManager : MonoBehaviour
     {
         dicData_Material = new Dictionary<int, Data_Material>();
         dicsprite = new Dictionary<int, Sprite>();
+        listmaterials = new List<Materials>();
 
     }
 
@@ -67,6 +69,7 @@ public class DataManager : MonoBehaviour
             string itempath = $"Sprite/Item_{dicMate.Value._img_name}";
             Sprite itemsprite = Resources.Load<Sprite>(itempath);
             dicsprite.Add(dicMate.Key, itemsprite);
+            this.listmaterials.Add(matetials);
             AssetDatabase.CreateAsset(matetials, $"Assets/Resources/InGame_Materials/{matetials.name}.asset");
             AssetDatabase.SaveAssets();
 

@@ -11,6 +11,7 @@ public class InvenSpawnManager : MonoBehaviour
        //dicMaterials = DataManager.Instance.GetMaterialsData();
     }
 
+
     
 
 

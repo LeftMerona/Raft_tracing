@@ -18,6 +18,15 @@ public class UI_InventoryPlayer : MonoBehaviour
     [SerializeField] private GameObject inventoryPrarent; 
     [SerializeField] private UI_Hotbar hotbar;
 
+
+
+
+
+
+
+
+
+
     public void InitInventory()
     {
         hotbar.InitHotbar();

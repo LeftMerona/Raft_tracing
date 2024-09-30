@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class hooktest : MonoBehaviour
 {
-    [SerializeField] private GameObject hook;
-    [SerializeField] private GameObject pivot;
+    
+     
+    
 
-    private void Awake()
-    {
-        hook.transform.SetParent(pivot.transform);
-        hook.transform.localPosition = Vector3.zero;
-        hook.transform.localRotation = pivot.transform.localRotation;
 
-    }
     
 
 
