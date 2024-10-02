@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChunkManager : MonoBehaviour
 {
     [SerializeField] GameObject oceanprefab;
-    private int planelength = 50;
+    private int planelength = 49;
     private int chunksize = 100;
     private int renderDistance = 50;
 
