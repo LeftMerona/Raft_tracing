@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1138212484295003
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4952963260918105}
+  - component: {fileID: 23513457715126885}
+  - component: {fileID: 33502151329953402}
+  - component: {fileID: 65543540310455590}
+  - component: {fileID: 114464600712416393}
+  - component: {fileID: 114943523277126385}
+  - component: {fileID: 114423048838581298}
+  - component: {fileID: 114945129409319242}
+  - component: {fileID: 114900032783015646}
+  m_Layer: 11
+  m_Name: Pickup_Floating_Plastic 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4952963260918105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.662, y: 1.662, z: 1.662}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!23 &23513457715126885
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f00636bec5896b345a751fbdb5135850, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33502151329953402
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Mesh: {fileID: 4300000, guid: 221d917b47d59a541a6e5700eb72aeae, type: 2}
+--- !u!65 &65543540310455590
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 0.6998153, y: 0.16212231, z: 0.6998153}
+  m_Center: {x: -0.059095472, y: 0.047858935, z: -0.053783074}
+--- !u!114 &114464600712416393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845b666030846b9d8a20597f30765256, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pickupItemType: 0
+  pickupTerm: Item/Plastic
+  lastLocalizedTerm: Plastic@Yep. It's plastic.
+  lastLocalizedPickupName: Plastic
+  yieldHandler: {fileID: 114945129409319242}
+  itemInstance:
+    uses: 1
+    baseItem: {fileID: 0}
+    settings_cookable:
+      cookTime: 0
+      cookingResult:
+        item: {fileID: 0}
+        amount: 0
+      cookingSlotsRequired: 0
+    settings_consumeable:
+      foodType: 0
+      foodForm: 0
+      oxygenYield: 0
+      hungerYield: 0
+      bonusHungerYield: 0
+      thirstYield: 0
+      bonusThirstYield: 0
+      isRaw: 0
+      eventRef_consumeSound:
+      itemAfterUse:
+        item: {fileID: 0}
+        amount: 0
+    settings_usable:
+      isUsable: 0
+      allowHoldButton: 0
+      useButtonName:
+      useButtonCooldown: 0
+      animationOnSelect: 0
+      animationOnUse: 0
+      forceAnimationIndex: 0
+      setTriggering: 0
+      lockItemDuringCooldown: 0
+      resetTriggerOnDeselect:
+      consumeUseAmount: 0
+      eventRef_break:
+    settings_Inventory:
+      sprite: {fileID: 0}
+      localizationTerm:
+      displayName:
+      description:
+      stackSize: 0
+    settings_buildable:
+      blockPrefabs: []
+      mirroredVersion: {fileID: 0}
+      upgrades:
+        woodVersion: {fileID: 0}
+        thatchVersion: {fileID: 0}
+        tier3Version: {fileID: 0}
+      primaryPaintAxis: 0
+      paintMode: 0
+      decorationPaint: 0
+      reselectOnBuild: 0
+      placeable: 0
+      hideWhenOverlapSamePos: 0
+      playParticlesWhenRemoved: 0
+      returnPlaceablesWhenUpgraded: 0
+      returnItemWhenRemovedRecursively: 0
+      unstableCheckDistance: 0
+    settings_equipment:
+      slotType: 0
+    settings_recipe:
+      craftingCategory: 0
+      categoryOrder: 0
+      subCategory:
+      subCatergoryOrder: 0
+      baseSkinItem: {fileID: 0}
+      skins: []
+      selectedSkin: {fileID: 0}
+      newCostToCraft: []
+      amountToCraft: 0
+      learned: 0
+      learnedFromBeginning: 0
+      _hiddenInResearchTable: 0
+      blueprintItem: {fileID: 0}
+      extraBlueprintItems: []
+      learnedViaBlueprint: 0
+    exclusiveString:
+  networkID: {fileID: 114943523277126385}
+  canBePickedUp: 1
+  requiresHands: 0
+  dropper: {fileID: 0}
+  specificPickups: []
+  isDropped: 0
+--- !u!114 &114943523277126385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01c842c3a306e70a04e77ec461802ca, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  spawnType: 0
+  spawner: {fileID: 0}
+  originalScene:
+    m_Handle: 0
+  uniqueSpawnableIndex: 0
+  poolDuplicateIndex: 0
+  stopTrackingOnPickup: 1
+  stopTrackUseRPC: 1
+  networkBehaviour: {fileID: 0}
+--- !u!114 &114423048838581298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283eec610aeaee8d2267677d4658f4d9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114945129409319242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcef719ea1cfd6d0765bf1cb40cf1f07, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  yieldAsset: {fileID: 11400000, guid: 00ea43f66a379eb40955a193ac273a57, type: 2}
+--- !u!114 &114900032783015646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138212484295003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6645901f5142a2c311d21f9901482596, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _DisplacementMode: 0
+  surfaceOffset: -0.1
+  waterPrecision: 1
+  lerpSpeed: 10
+  floatTowardsSurfaceInOxygenRegion: 1
+  setToSurface: 1

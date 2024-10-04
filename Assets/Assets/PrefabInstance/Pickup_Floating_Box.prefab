@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1029777210182653
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4939733253256529}
+  - component: {fileID: 65064581257446628}
+  - component: {fileID: 114191325502691884}
+  - component: {fileID: 114741281235750844}
+  - component: {fileID: 114017753914828653}
+  - component: {fileID: 114257717445307223}
+  - component: {fileID: 114530582424988445}
+  - component: {fileID: 114536437280437693}
+  m_Layer: 11
+  m_Name: Pickup_Floating_Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1613865196677062
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4732814308084779}
+  - component: {fileID: 33045692991885689}
+  - component: {fileID: 23484540862524402}
+  m_Layer: 0
+  m_Name: ShippingCrate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1120142830210969
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4974503516486777}
+  - component: {fileID: 114513126647132560}
+  - component: {fileID: 114453421144740611}
+  m_Layer: 11
+  m_Name: SpecificLoot_Blueprint_Reciever
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1255347491186955
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4234991628045502}
+  - component: {fileID: 114541678353219037}
+  m_Layer: 11
+  m_Name: SpecificLoot_ResearchTable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4939733253256529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4732814308084779}
+  - {fileID: 4974503516486777}
+  - {fileID: 4234991628045502}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!65 &65064581257446628
+BoxCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Size: {x: 0.84801924, y: 1.332782, z: 0.81464964}
+  m_Center: {x: -0.024391592, y: 0.0014258623, z: 0}
+--- !u!114 &114191325502691884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845b666030846b9d8a20597f30765256, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  pickupItemType: 0
+  pickupTerm: Item/Crate
+  lastLocalizedTerm: Crate
+  lastLocalizedPickupName: Crate
+  yieldHandler: {fileID: 114257717445307223}
+  itemInstance:
+    uses: 1
+    baseItem: {fileID: 0}
+    settings_cookable:
+      cookTime: 0
+      cookingResult:
+        item: {fileID: 0}
+        amount: 0
+      cookingSlotsRequired: 0
+    settings_consumeable:
+      foodType: 0
+      foodForm: 0
+      oxygenYield: 0
+      hungerYield: 0
+      bonusHungerYield: 0
+      thirstYield: 0
+      bonusThirstYield: 0
+      isRaw: 0
+      eventRef_consumeSound:
+      itemAfterUse:
+        item: {fileID: 0}
+        amount: 0
+    settings_usable:
+      isUsable: 0
+      allowHoldButton: 0
+      useButtonName:
+      useButtonCooldown: 0
+      animationOnSelect: 0
+      animationOnUse: 0
+      forceAnimationIndex: 0
+      setTriggering: 0
+      lockItemDuringCooldown: 0
+      resetTriggerOnDeselect:
+      consumeUseAmount: 0
+      eventRef_break:
+    settings_Inventory:
+      sprite: {fileID: 0}
+      localizationTerm:
+      displayName:
+      description:
+      stackSize: 0
+    settings_buildable:
+      blockPrefabs: []
+      mirroredVersion: {fileID: 0}
+      upgrades:
+        woodVersion: {fileID: 0}
+        thatchVersion: {fileID: 0}
+        tier3Version: {fileID: 0}
+      primaryPaintAxis: 0
+      paintMode: 0
+      decorationPaint: 0
+      reselectOnBuild: 0
+      placeable: 0
+      hideWhenOverlapSamePos: 0
+      playParticlesWhenRemoved: 0
+      returnPlaceablesWhenUpgraded: 0
+      returnItemWhenRemovedRecursively: 0
+      unstableCheckDistance: 0
+    settings_equipment:
+      slotType: 0
+    settings_recipe:
+      craftingCategory: 0
+      categoryOrder: 0
+      subCategory:
+      subCatergoryOrder: 0
+      baseSkinItem: {fileID: 0}
+      skins: []
+      selectedSkin: {fileID: 0}
+      newCostToCraft: []
+      amountToCraft: 0
+      learned: 0
+      learnedFromBeginning: 0
+      _hiddenInResearchTable: 0
+      blueprintItem: {fileID: 0}
+      extraBlueprintItems: []
+      learnedViaBlueprint: 0
+    exclusiveString:
+  networkID: {fileID: 114741281235750844}
+  canBePickedUp: 1
+  requiresHands: 0
+  dropper: {fileID: 114536437280437693}
+  specificPickups:
+  - {fileID: 114513126647132560}
+  - {fileID: 114541678353219037}
+  isDropped: 0
+--- !u!114 &114741281235750844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01c842c3a306e70a04e77ec461802ca, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  spawnType: 0
+  spawner: {fileID: 0}
+  originalScene:
+    m_Handle: 0
+  uniqueSpawnableIndex: 0
+  poolDuplicateIndex: 0
+  stopTrackingOnPickup: 1
+  stopTrackUseRPC: 1
+  networkBehaviour: {fileID: 0}
+--- !u!114 &114017753914828653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283eec610aeaee8d2267677d4658f4d9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114257717445307223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcef719ea1cfd6d0765bf1cb40cf1f07, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  yieldAsset: {fileID: 11400000, guid: 6cbb42ee104c16048a3b04c17f103d12, type: 2}
+--- !u!114 &114530582424988445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6645901f5142a2c311d21f9901482596, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _DisplacementMode: 0
+  surfaceOffset: 0
+  waterPrecision: 1
+  lerpSpeed: 10
+  floatTowardsSurfaceInOxygenRegion: 1
+  setToSurface: 1
+--- !u!114 &114536437280437693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029777210182653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fbb6b500c9a8d443ed2a4f74618eefd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  randomDropperAsset: {fileID: 11400000, guid: 9475258d1f7b08c41a6354d2225429c0, type: 2}
+  amountOfItems:
+    minValue: 8
+    maxValue: 10
+--- !u!4 &4732814308084779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613865196677062}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710665, w: 0.70710695}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_Children: []
+  m_Father: {fileID: 4939733253256529}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.99998}
+--- !u!33 &33045692991885689
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613865196677062}
+  m_Mesh: {fileID: 4300000, guid: 465816d3d9646474bb7876e19947cd21, type: 2}
+--- !u!23 &23484540862524402
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613865196677062}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1cb65c52948dbde4d93425b9c8cef711, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &4974503516486777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120142830210969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4939733253256529}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114513126647132560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120142830210969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4e5bf947e2e075f51088ebda9b8beb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  requiredTimePlayed: 15
+  blueprintDropper: {fileID: 114453421144740611}
+--- !u!114 &114453421144740611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120142830210969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fbb6b500c9a8d443ed2a4f74618eefd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  randomDropperAsset: {fileID: 11400000, guid: 3042033a9ddf0024d8dd84bd303b9311, type: 2}
+  amountOfItems:
+    minValue: 1
+    maxValue: 1
+--- !u!4 &4234991628045502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255347491186955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4939733253256529}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114541678353219037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255347491186955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1538e2c8ea88ea2b857f9b704b47da, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  requiredTimePlayed: 30
+  mysteryBoxItem: {fileID: 11400000, guid: ea1f0ce77f7729741b824f95b370dac0, type: 2}
+  mysteryLoot: {fileID: 11400000, guid: d10cd7672e2833049990996cfc6a1ce5, type: 2}
+  mysteryLootDropChance: 20
