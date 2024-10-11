@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Newtonsoft.Json;
 using System.Linq;
 using UnityEditor;
-using GLTFast.Schema;
+using System.IO;
 
 
 public class DataManager : MonoBehaviour
@@ -116,7 +116,7 @@ public class DataManager : MonoBehaviour
             Sprite itemsprite = Resources.Load<Sprite>(itmepath);
             dicsprite.Add(dicitem.Key, itemsprite);
             listItems.Add(item);
-            AssetDatabase.CreateAsset(item, $"Assets/Resources/InGame_Materials/{item.name}.asset");
+            AssetDatabase.CreateAsset(item, $"Assets/Resources/InGame_Items/{item.name}.asset");
             AssetDatabase.SaveAssets();
         }
     }
