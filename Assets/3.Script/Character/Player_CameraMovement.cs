@@ -7,13 +7,7 @@ using Cinemachine;
 public class Player_CameraMovement : MonoBehaviour
 {
     [SerializeField] private CursorManager cursorManager;
-    private float _mouseX;
-    private float _mouseY;
     [SerializeField] private GameObject upperbody;
-    [SerializeField] private GameObject maincamera;
-
-    [SerializeField] private GameObject camerapivot;
-
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
     private CinemachinePOV povcamera;
 
@@ -26,7 +20,10 @@ public class Player_CameraMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        MoveMousePosition();
+        if (!cursorManager.IsOpen)
+        {
+            MoveMousePosition();
+        }
     }
 
     private void MoveMousePosition()

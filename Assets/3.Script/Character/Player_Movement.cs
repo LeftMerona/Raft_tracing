@@ -26,6 +26,15 @@ public class Player_Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void FixedUpdate()
+    {
+        MoveWS_Value = Input.GetAxis(_moveWSAxis_name);
+        MoveAD_Value = Input.GetAxis(_moveADAxis_name);
+
+        var movedir = new Vector3(MoveAD_Value, 0, MoveWS_Value).normalized * movespeed * Time.deltaTime;
+        rb.MovePosition(transform.position + (transform.forward * movedir.z) + (transform.right * movedir.x));
+    }
+
     private void LateUpdate()
     {
         MovePosition();
@@ -33,15 +42,9 @@ public class Player_Movement : MonoBehaviour
 
     private void MovePosition()
     {
-        MoveWS_Value = Input.GetAxis(_moveWSAxis_name);
-        MoveAD_Value = Input.GetAxis(_moveADAxis_name);
-
-        var movedir = new Vector3(MoveAD_Value, 0, MoveWS_Value).normalized * movespeed * Time.deltaTime;
 
         ani.SetFloat("VelocityX", MoveAD_Value);
         ani.SetFloat("VelocityZ", MoveWS_Value);
-
-        rb.MovePosition(transform.position + (transform.forward * movedir.z) + (transform.right * movedir.x));
     }
 
 
