@@ -18,7 +18,7 @@ public class Player_Movement : MonoBehaviour
     private Rigidbody rb;
     private Animator ani;
 
-    
+
 
     private void Awake()
     {

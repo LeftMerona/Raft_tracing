@@ -9,6 +9,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.cinemachine": {
+      "version": "2.6.17",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.cloud.gltfast": {
       "version": "5.2.0",
       "depth": 0,
