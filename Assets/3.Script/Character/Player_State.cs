@@ -7,24 +7,18 @@ public class Player_State : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody rb;
-    public Rigidbody PlayerRigidbody { get => rb; }
+    public Rigidbody PlayerRigidbody { get => rb; set => rb = value; }
     private int _ItemID;
 
     private bool isHand = false;
-    public bool IsHand { get => isHand; private set => isHand = value; }
+    public bool IsHand { get => isHand; set => isHand = value; }
 
     protected bool isJump = false;
-    public bool IsJump { get => isJump; private set => isJump = value; }
-
+    public bool IsJump { get => isJump; set => isJump = value; }
     protected bool isGround = true;
-    public bool IsGround { get => isGround; private set => isGround = value; }
-    public void ChangeisGround()
-    {
-        isGround = !isGround;
-    }
-
+    public bool IsGround { get => isGround; set => isGround = value; }
     private bool isOcean = false;
-    public bool IsOcean { get => isOcean; private set => isOcean = value; }
+    public bool IsOcean { get => isOcean; set => isOcean = value; }
     protected bool isAir = false; 
 
     protected string Ocean;

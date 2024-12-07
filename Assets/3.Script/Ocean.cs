@@ -11,13 +11,13 @@ public class Ocean : MonoBehaviour
         {   
             if (!state.IsOcean)
             {
-                state.ChangeisGround();
+                state.IsOcean = true;
                 state.PlayerRigidbody.useGravity = false;
                 state.PlayerRigidbody.velocity = Vector3.zero; 
             }
             else
             {
-                state.ChangeisGround();
+                state.IsOcean = false;
                 state.PlayerRigidbody.useGravity = true;
             }
         }
