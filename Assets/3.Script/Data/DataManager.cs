@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Newtonsoft.Json;
 using System.Linq;
 using UnityEditor;
-using System.IO;
 
 
 public class DataManager : MonoBehaviour
@@ -19,20 +17,22 @@ public class DataManager : MonoBehaviour
     private Dictionary<int, Data_Item> dicData_Item;
     private List<Item> listItems;
 
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+
+            Init_Data();
+            Load_AllData();
+
             DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
-
-        Init_Data();
-        Load_AllData();
     }
 
 
@@ -90,8 +90,6 @@ public class DataManager : MonoBehaviour
         string item_json = Resources.Load<TextAsset>("Data/Item_Data").text;
         dicData_Item = JsonConvert.DeserializeObject<Data_Item[]>(item_json).ToDictionary(x => x._id, x => x);
        
- 
-
         foreach (KeyValuePair<int, Data_Item> dicitem in dicData_Item)
         {
             Item item = ScriptableObject.CreateInstance<Item>();

@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Player_Movement : MonoBehaviour
 {
-
     public float movespeed = 1f;
 
     [SerializeField] private string _moveWSAxis_name = "Vertical";
@@ -42,7 +40,6 @@ public class Player_Movement : MonoBehaviour
 
     private void MovePosition()
     {
-
         ani.SetFloat("VelocityX", MoveAD_Value);
         ani.SetFloat("VelocityZ", MoveWS_Value);
     }

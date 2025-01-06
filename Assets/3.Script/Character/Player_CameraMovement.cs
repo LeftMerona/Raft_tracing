@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using Cinemachine;
 
@@ -10,8 +9,6 @@ public class Player_CameraMovement : MonoBehaviour
     [SerializeField] private GameObject upperbody;
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
     private CinemachinePOV povcamera;
-
-    private float upperbodyRotation = 0f;
 
     private void Start()
     {
@@ -33,6 +30,8 @@ public class Player_CameraMovement : MonoBehaviour
         }
         else
         {
+            povcamera.m_HorizontalAxis.m_InputAxisValue = 0f;
+            povcamera.m_VerticalAxis.m_InputAxisValue = 0f;
             povcamera.m_HorizontalAxis.m_InputAxisName = "";
             povcamera.m_VerticalAxis.m_InputAxisName = "";
         }

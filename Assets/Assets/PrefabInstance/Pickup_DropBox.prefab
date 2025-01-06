@@ -2,24 +2,17 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &1227274607183354
 GameObject:
-  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4221990567532341}
   - component: {fileID: 23782280881344751}
   - component: {fileID: 33145264497282170}
   - component: {fileID: 65280649568322554}
-  - component: {fileID: 114809425243527478}
-  - component: {fileID: 114345224619932728}
-  - component: {fileID: 114887775570843310}
-  - component: {fileID: 114564057726293371}
   - component: {fileID: 54066864109763469}
-  - component: {fileID: 114434229880786840}
-  - component: {fileID: 114358805777823874}
-  - component: {fileID: 114367955068524694}
   m_Layer: 14
   m_Name: Pickup_DropBox
   m_TagString: Untagged
@@ -56,6 +49,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +74,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &33145264497282170
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -90,7 +85,6 @@ MeshFilter:
   m_Mesh: {fileID: 4300000, guid: ee81beb83cf7dae4a9f877f30a76c793, type: 2}
 --- !u!65 &65280649568322554
 BoxCollider:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -99,162 +93,17 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
+  serializedVersion: 2
   m_Size: {x: 0.34257507, y: 0.23595989, z: 0.2726338}
-  m_Center: {x: -5.340576E-05, y: -0.015915245, z: -0.0016438067}
---- !u!114 &114809425243527478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845b666030846b9d8a20597f30765256, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  pickupItemType: 0
-  pickupTerm: Item/Item
-  lastLocalizedTerm: Item
-  lastLocalizedPickupName: Item
-  yieldHandler: {fileID: 114564057726293371}
-  itemInstance:
-    uses: 1
-    baseItem: {fileID: 0}
-    settings_cookable:
-      cookTime: 0
-      cookingResult:
-        item: {fileID: 0}
-        amount: 0
-      cookingSlotsRequired: 0
-    settings_consumeable:
-      foodType: 0
-      foodForm: 0
-      oxygenYield: 0
-      hungerYield: 0
-      bonusHungerYield: 0
-      thirstYield: 0
-      bonusThirstYield: 0
-      isRaw: 0
-      eventRef_consumeSound:
-      itemAfterUse:
-        item: {fileID: 0}
-        amount: 0
-    settings_usable:
-      isUsable: 0
-      allowHoldButton: 0
-      useButtonName:
-      useButtonCooldown: 0
-      animationOnSelect: 0
-      animationOnUse: 0
-      forceAnimationIndex: 0
-      setTriggering: 0
-      lockItemDuringCooldown: 0
-      resetTriggerOnDeselect:
-      consumeUseAmount: 0
-      eventRef_break:
-    settings_Inventory:
-      sprite: {fileID: 0}
-      localizationTerm:
-      displayName:
-      description:
-      stackSize: 0
-    settings_buildable:
-      blockPrefabs: []
-      mirroredVersion: {fileID: 0}
-      upgrades:
-        woodVersion: {fileID: 0}
-        thatchVersion: {fileID: 0}
-        tier3Version: {fileID: 0}
-      primaryPaintAxis: 0
-      paintMode: 0
-      decorationPaint: 0
-      reselectOnBuild: 0
-      placeable: 0
-      hideWhenOverlapSamePos: 0
-      playParticlesWhenRemoved: 0
-      returnPlaceablesWhenUpgraded: 0
-      returnItemWhenRemovedRecursively: 0
-      unstableCheckDistance: 0
-    settings_equipment:
-      slotType: 0
-    settings_recipe:
-      craftingCategory: 0
-      categoryOrder: 0
-      subCategory:
-      subCatergoryOrder: 0
-      baseSkinItem: {fileID: 0}
-      skins: []
-      selectedSkin: {fileID: 0}
-      newCostToCraft: []
-      amountToCraft: 0
-      learned: 0
-      learnedFromBeginning: 0
-      _hiddenInResearchTable: 0
-      blueprintItem: {fileID: 0}
-      extraBlueprintItems: []
-      learnedViaBlueprint: 0
-    exclusiveString:
-  networkID: {fileID: 114345224619932728}
-  canBePickedUp: 1
-  requiresHands: 0
-  dropper: {fileID: 0}
-  specificPickups: []
-  isDropped: 0
---- !u!114 &114345224619932728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01c842c3a306e70a04e77ec461802ca, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  spawnType: 0
-  spawner: {fileID: 0}
-  originalScene:
-    m_Handle: 0
-  uniqueSpawnableIndex: 0
-  poolDuplicateIndex: 0
-  stopTrackingOnPickup: 1
-  stopTrackUseRPC: 1
-  networkBehaviour: {fileID: 0}
---- !u!114 &114887775570843310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283eec610aeaee8d2267677d4658f4d9, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
---- !u!114 &114564057726293371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcef719ea1cfd6d0765bf1cb40cf1f07, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  yieldAsset: {fileID: 0}
+  m_Center: {x: -0.00005340576, y: -0.015915245, z: -0.0016438067}
 --- !u!54 &54066864109763469
 Rigidbody:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227274607183354}
+  serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
@@ -263,66 +112,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114434229880786840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b8cff4d81097fd3e20307579cb8006d, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  collider: {fileID: 65280649568322554}
-  despawnTime: 300
---- !u!114 &114358805777823874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bdb9fcac63418ac9d1aa1c1ee4d99d8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  _DisplacementMode: 0
-  surfaceOffset: 0
-  waterPrecision: 1
-  lerpSpeed: 10
-  floatTowardsSurfaceInOxygenRegion: 0
-  setToSurface: 0
-  stationaryWaterFloatInRegionAmplitude: 0.01
-  oxygenRegion: {fileID: 0}
-  oxygenRegionComponent: {fileID: 0}
-  checkForRegionOffset: {fileID: 0}
-  doAdditionalSurfaceRaycast: 0
-  raycastTimer:
-    cooldown: 0
-    cooldownOffsetMin: 0
-    cooldownOffsetMax: 0
-  surfaceRaycastUpwardsDistance: 1
-  debug: 0
-  active: 1
-  body: {fileID: 54066864109763469}
-  waterDrag: 3
-  originalLerpSpeed: 0
---- !u!114 &114367955068524694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227274607183354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d1539f7fadd0474305ff2a62ea8fec, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  active: 1
-  eventRef_sound: event:/crafting/hook_impact_raft
-  cooldown: 0
-  cooldownTime: 1

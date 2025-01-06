@@ -1,41 +1,44 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1924850185031190
+--- !u!1 &1193445280807198
 GameObject:
-  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - component: {fileID: 4055692499377108}
-  - component: {fileID: 23535775208915668}
-  - component: {fileID: 33319933003244776}
-  - component: {fileID: 65546537648675104}
-  - component: {fileID: 114658200538841625}
-  - component: {fileID: 114460618599813991}
-  - component: {fileID: 114652289230130153}
-  - component: {fileID: 114064441812131100}
-  - component: {fileID: 114712117669786518}
-  - component: {fileID: 114108887601135358}
+  - component: {fileID: 4460297390443552}
   m_Layer: 11
-  m_Name: Pickup_Floating_Barrel
+  m_Name: SpecificLoot_ResearchTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1804035373654686
-GameObject:
-  serializedVersion: 6
+--- !u!4 &4460297390443552
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193445280807198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4055692499377108}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1804035373654686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4416263417736031}
-  - component: {fileID: 114955329847139306}
-  - component: {fileID: 114889762200451274}
   m_Layer: 11
   m_Name: SpecificLoot_Blueprint_Reciever
   m_TagString: Untagged
@@ -43,18 +46,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1193445280807198
-GameObject:
-  serializedVersion: 6
+--- !u!4 &4416263417736031
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804035373654686}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.4758925, y: -3.8469238, z: -0.91510344}
+  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
+  m_Children: []
+  m_Father: {fileID: 4055692499377108}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1924850185031190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - component: {fileID: 4460297390443552}
-  - component: {fileID: 114825838726863692}
+  - component: {fileID: 4055692499377108}
+  - component: {fileID: 23535775208915668}
+  - component: {fileID: 33319933003244776}
+  - component: {fileID: 65546537648675104}
   m_Layer: 11
-  m_Name: SpecificLoot_ResearchTable
+  m_Name: Pickup_Floating_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,6 +110,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -115,6 +135,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &33319933003244776
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -125,7 +146,6 @@ MeshFilter:
   m_Mesh: {fileID: 4300000, guid: 6b3839a4190d08543b39e8b603047e8b, type: 2}
 --- !u!65 &65546537648675104
 BoxCollider:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,261 +154,6 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
+  serializedVersion: 2
   m_Size: {x: 0.6, y: 0.6590402, z: 0.6}
-  m_Center: {x: 1.7881393E-07, y: -0.0070285797, z: 0}
---- !u!114 &114658200538841625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924850185031190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845b666030846b9d8a20597f30765256, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  pickupItemType: 0
-  pickupTerm: Item/Barrel
-  lastLocalizedTerm: Barrel
-  lastLocalizedPickupName: Barrel
-  yieldHandler: {fileID: 114064441812131100}
-  itemInstance:
-    uses: 1
-    baseItem: {fileID: 0}
-    settings_cookable:
-      cookTime: 0
-      cookingResult:
-        item: {fileID: 0}
-        amount: 0
-      cookingSlotsRequired: 0
-    settings_consumeable:
-      foodType: 0
-      foodForm: 0
-      oxygenYield: 0
-      hungerYield: 0
-      bonusHungerYield: 0
-      thirstYield: 0
-      bonusThirstYield: 0
-      isRaw: 0
-      eventRef_consumeSound:
-      itemAfterUse:
-        item: {fileID: 0}
-        amount: 0
-    settings_usable:
-      isUsable: 0
-      allowHoldButton: 0
-      useButtonName:
-      useButtonCooldown: 0
-      animationOnSelect: 0
-      animationOnUse: 0
-      forceAnimationIndex: 0
-      setTriggering: 0
-      lockItemDuringCooldown: 0
-      resetTriggerOnDeselect:
-      consumeUseAmount: 0
-      eventRef_break:
-    settings_Inventory:
-      sprite: {fileID: 0}
-      localizationTerm:
-      displayName:
-      description:
-      stackSize: 0
-    settings_buildable:
-      blockPrefabs: []
-      mirroredVersion: {fileID: 0}
-      upgrades:
-        woodVersion: {fileID: 0}
-        thatchVersion: {fileID: 0}
-        tier3Version: {fileID: 0}
-      primaryPaintAxis: 0
-      paintMode: 0
-      decorationPaint: 0
-      reselectOnBuild: 0
-      placeable: 0
-      hideWhenOverlapSamePos: 0
-      playParticlesWhenRemoved: 0
-      returnPlaceablesWhenUpgraded: 0
-      returnItemWhenRemovedRecursively: 0
-      unstableCheckDistance: 0
-    settings_equipment:
-      slotType: 0
-    settings_recipe:
-      craftingCategory: 0
-      categoryOrder: 0
-      subCategory:
-      subCatergoryOrder: 0
-      baseSkinItem: {fileID: 0}
-      skins: []
-      selectedSkin: {fileID: 0}
-      newCostToCraft: []
-      amountToCraft: 0
-      learned: 0
-      learnedFromBeginning: 0
-      _hiddenInResearchTable: 0
-      blueprintItem: {fileID: 0}
-      extraBlueprintItems: []
-      learnedViaBlueprint: 0
-    exclusiveString:
-  networkID: {fileID: 114460618599813991}
-  canBePickedUp: 1
-  requiresHands: 0
-  dropper: {fileID: 114108887601135358}
-  specificPickups:
-  - {fileID: 114955329847139306}
-  - {fileID: 114825838726863692}
-  isDropped: 0
---- !u!114 &114460618599813991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924850185031190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01c842c3a306e70a04e77ec461802ca, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  spawnType: 0
-  spawner: {fileID: 0}
-  originalScene:
-    m_Handle: 0
-  uniqueSpawnableIndex: 0
-  poolDuplicateIndex: 0
-  stopTrackingOnPickup: 1
-  stopTrackUseRPC: 1
-  networkBehaviour: {fileID: 0}
---- !u!114 &114652289230130153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924850185031190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283eec610aeaee8d2267677d4658f4d9, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
---- !u!114 &114064441812131100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924850185031190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcef719ea1cfd6d0765bf1cb40cf1f07, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  yieldAsset: {fileID: 11400000, guid: 2b08a5050b5b51f4cae2978745f3bc82, type: 2}
---- !u!114 &114712117669786518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924850185031190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6645901f5142a2c311d21f9901482596, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  _DisplacementMode: 0
-  surfaceOffset: 0
-  waterPrecision: 1
-  lerpSpeed: 10
-  floatTowardsSurfaceInOxygenRegion: 1
-  setToSurface: 1
---- !u!114 &114108887601135358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924850185031190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fbb6b500c9a8d443ed2a4f74618eefd, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  randomDropperAsset: {fileID: 11400000, guid: 9475258d1f7b08c41a6354d2225429c0, type: 2}
-  amountOfItems:
-    minValue: 4
-    maxValue: 6
---- !u!4 &4416263417736031
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804035373654686}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4758925, y: -3.8469238, z: -0.91510344}
-  m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
-  m_Children: []
-  m_Father: {fileID: 4055692499377108}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114955329847139306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804035373654686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e4e5bf947e2e075f51088ebda9b8beb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  requiredTimePlayed: 15
-  blueprintDropper: {fileID: 114889762200451274}
---- !u!114 &114889762200451274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804035373654686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fbb6b500c9a8d443ed2a4f74618eefd, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  randomDropperAsset: {fileID: 11400000, guid: 3042033a9ddf0024d8dd84bd303b9311, type: 2}
-  amountOfItems:
-    minValue: 1
-    maxValue: 1
---- !u!4 &4460297390443552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193445280807198}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4055692499377108}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
---- !u!114 &114825838726863692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193445280807198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee1538e2c8ea88ea2b857f9b704b47da, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  requiredTimePlayed: 30
-  mysteryBoxItem: {fileID: 11400000, guid: ea1f0ce77f7729741b824f95b370dac0, type: 2}
-  mysteryLoot: {fileID: 11400000, guid: d10cd7672e2833049990996cfc6a1ce5, type: 2}
-  mysteryLootDropChance: 20
+  m_Center: {x: 0.00000017881393, y: -0.0070285797, z: 0}

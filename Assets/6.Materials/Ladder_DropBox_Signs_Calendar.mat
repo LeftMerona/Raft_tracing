@@ -8,98 +8,183 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ladder_DropBox_Signs_Calendar
-  m_Shader: {fileID: 4800000, guid: 14302593648dc7547ad7fa08f0c1057c, type: 3}
-  m_ShaderKeywords:
-  m_LightmapFlags: 0
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-      _Diffuse:
+    - _BaseMap:
         m_Texture: {fileID: 2800000, guid: b72698c194ae2ae4789dc040301e3097, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-      _Emission:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-      _MetallicRPaintMaskGSmoothnessA:
-        m_Texture: {fileID: 2800000, guid: 0833e077884a6d24f96f482643c0cd75, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-      _Normal:
+    - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 3bda93385a68eb24ba610cb95634c8ae, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-      _PatternArray:
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: b72698c194ae2ae4789dc040301e3097, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b72698c194ae2ae4789dc040301e3097, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 0833e077884a6d24f96f482643c0cd75, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicRPaintMaskGSmoothnessA:
+        m_Texture: {fileID: 2800000, guid: 0833e077884a6d24f96f482643c0cd75, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 3bda93385a68eb24ba610cb95634c8ae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PatternArray:
         m_Texture: {fileID: 18700000, guid: d929e4f21158b4348aed353894179e08, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-      _texcoord:
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-      _BumpScale: 1
-      _Cutoff: 0.5
-      _DecoPaintSelect: 0
-      _Destroy_Overlay: 0
-      _DetailNormalMapScale: 1
-      _DstBlend: 0
-      _Emission: 0
-      _EmissionMultiplier: 1
-      _EmissionSwitch: 1
-      _GlossMapScale: 1
-      _Glossiness: 0.5
-      _GlossyReflections: 1
-      _GreenChannelMultiply: 0
-      _Hue: 0
-      _MaskClipValue: 0.5
-      _Metallic: 0
-      _Mode: 0
-      _OcclusionStrength: 1
-      _PaintMaskOverride: 0
-      _PaintSide: 0
-      _PaintSwitch: 0
-      _Parallax: 0.02
-      _Pattern1_MaskFlip: 1
-      _Pattern1_Masked: 1
-      _Pattern2_MaskFlip: 1
-      _Pattern2_Masked: 1
-      _Pattern_Index1: 0
-      _Pattern_Index2: 0
-      _RedChannelMultiply: 0
-      _Saturation: 0
-      _SideMaskAxis: 0
-      _SideMask_Offset: 0
-      _SideMask_Sharpness: 1
-      _SmoothnessTextureChannel: 0
-      _SpecularHighlights: 1
-      _SrcBlend: 1
-      _TapestryTiling: 1
-      _TriplanarFalloff: 1
-      _UVSec: 0
-      _UVSwitch: 1
-      _UV_VertexPos_Switch: 0
-      _Value: 0
-      _Waves: 4.774876
-      _WindSpeed: 0
-      _XMultiplier: 0.5
-      _YMultiplier: 0.5
-      _ZMultiplier: 0.5
-      _ZWrite: 1
-      __dirty: 0
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DecoPaintSelect: 0
+    - _Destroy_Overlay: 0
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Emission: 0
+    - _EmissionMultiplier: 1
+    - _EmissionSwitch: 1
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GreenChannelMultiply: 0
+    - _Hue: 0
+    - _MaskClipValue: 0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _PaintMaskOverride: 0
+    - _PaintSide: 0
+    - _PaintSwitch: 0
+    - _Parallax: 0.02
+    - _Pattern1_MaskFlip: 1
+    - _Pattern1_Masked: 1
+    - _Pattern2_MaskFlip: 1
+    - _Pattern2_Masked: 1
+    - _Pattern_Index1: 0
+    - _Pattern_Index2: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _RedChannelMultiply: 0
+    - _Saturation: 0
+    - _SideMaskAxis: 0
+    - _SideMask_Offset: 0
+    - _SideMask_Sharpness: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _TapestryTiling: 1
+    - _TriplanarFalloff: 1
+    - _UVSec: 0
+    - _UVSwitch: 1
+    - _UV_VertexPos_Switch: 0
+    - _Value: 0
+    - _Waves: 4.774876
+    - _WindSpeed: 0
+    - _WorkflowMode: 1
+    - _XMultiplier: 0.5
+    - _YMultiplier: 0.5
+    - _ZMultiplier: 0.5
+    - _ZWrite: 1
+    - __dirty: 0
     m_Colors:
-      _BuildingEmission: {r: 0, g: 0, b: 0, a: 0}
-      _Color: {r: 1, g: 1, b: 1, a: 1}
-      _Color1: {r: 0, g: 0, b: 0, a: 0}
-      _Color2: {r: 0, g: 0, b: 0, a: 0}
-      _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-      _Side1_Base: {r: 1, g: 1, b: 1, a: 0}
-      _Side1_Pattern: {r: 1, g: 1, b: 1, a: 0}
-      _Side2_Base: {r: 0, g: 0, b: 0, a: 0}
-      _Side2_Pattern: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BuildingEmission: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0, g: 0, b: 0, a: 0}
+    - _Color2: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Side1_Base: {r: 1, g: 1, b: 1, a: 0}
+    - _Side1_Pattern: {r: 1, g: 1, b: 1, a: 0}
+    - _Side2_Base: {r: 0, g: 0, b: 0, a: 0}
+    - _Side2_Pattern: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &614908499862985127
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 4
