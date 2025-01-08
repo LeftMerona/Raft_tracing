@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ed8a2fc1d385247802227ac3cd6078, type: 3}
+  m_Name: Paddle
+  m_EditorClassIdentifier: 
+  id: 12
+  img_name: Paddle
+  name_kr: "\uB178"
+  handAction: 2
+  stackable: 0
+  maxstack: 1
+  durability: 1
+  description: "\uC774\uAC74 \uB178\uC785\uB2C8\uB2E4 "
+  sprite: {fileID: 21300000, guid: e4e0f24c1a18a1a4c8e12e671e6d4ae6, type: 2}
+  materials:
+  - materialName: Plank
+    quantity: 4
+  - materialName: Plastic
+    quantity: 6
+  - materialName: Rope
+    quantity: 2
+  category: NAVIGATION

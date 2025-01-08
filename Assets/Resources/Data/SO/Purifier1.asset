@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ed8a2fc1d385247802227ac3cd6078, type: 3}
+  m_Name: Purifier1
+  m_EditorClassIdentifier: 
+  id: 6
+  img_name: Purifier1
+  name_kr: "\uB2E8\uC21C \uC815\uC218\uAE30"
+  handAction: 1
+  stackable: 1
+  maxstack: 5
+  durability: 0
+  description: "\uBC14\uB2F7\uBB3C \uD55C \uCEF5\uC744 \uB2F4\uC218\uB85C \uB9CC\uB4E4
+    \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uD310\uC790\uB97C \uC5F0\uB8CC\uB85C \uC0AC\uC6A9\uD569\uB2C8\uB2E4."
+  sprite: {fileID: 21300000, guid: a5740e54c24acb94093623d8d31c72a2, type: 2}
+  materials:
+  - materialName: Plank
+    quantity: 6
+  - materialName: Thatch
+    quantity: 6
+  - materialName: Plastic
+    quantity: 4
+  category: FOOD/WATER

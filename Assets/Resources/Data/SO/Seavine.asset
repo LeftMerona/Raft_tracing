@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee22c08b7295c6f448614a80ce69f5da, type: 3}
+  m_Name: Seavine
+  m_EditorClassIdentifier: 
+  id: 108
+  img_name: Seavine
+  name_kr: "\uD574\uCD08"
+  handAction: 0
+  stackable: 1
+  maxstack: 20
+  durability: 0
+  description: "\uC81C\uB828\uD558\uBA74 \uCC10\uB4DD\uD55C \uAC83\uC73C\uB85C \uBC14\uB01D\uB2C8\uB2E4."
+  sprite: {fileID: 21300000, guid: a0238276e62433b4e917ab877bab062d, type: 2}

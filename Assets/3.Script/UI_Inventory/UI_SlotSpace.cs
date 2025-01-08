@@ -14,40 +14,40 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
 
     // 여기에 스크립트 요소들 다 넣어야되겟다 
+    [SerializeField] private SoItemBase itemso;
 
-    private int _mid;
-    private string _mimg_name;
-    private string _mname_kr;
-    private HandAction _mhandAction;
-    private bool _mstackable;
-    private int _mmaxstack;
-    private bool _mdurability;
-    private string _mdescription;
 
-    [SerializeField] private GameObject slot_Image;
-    [SerializeField] private GameObject slot_AmountText;
-    [SerializeField] private GameObject slot_Sliderdurability;
+    [SerializeField] private Image slot_Image;
+    [SerializeField] private Text slot_AmountText;
+    [SerializeField] private Slider slot_Sliderdurability;
+
+    //이건 InventoryPlayer에서 초기화 할때 같이함 
     private GameObject selectionSlot;
-    public GameObject SelectSlot { set => selectionSlot = value; }
+
     private RectTransform slot_pos;
     public RectTransform slot_Position { get => slot_pos; }
 
     private UI_DisplayItem slot_display;
-    public UI_DisplayItem Slot_Display { get => slot_display; set => slot_display = value; }
 
     private bool isSelect = false;
+
+    public void SetselectionSlot(GameObject selectslot, UI_DisplayItem display)
+    {
+        selectionSlot = selectslot;
+        slot_display = display;
+    }
 
 
     public void InitSlot()
     {
-        slot_Image = transform.GetChild(0).gameObject;
-        slot_AmountText = transform.GetChild(1).gameObject;
-        slot_Sliderdurability = transform.GetChild(2).gameObject;
-        slot_pos = transform.GetComponent<RectTransform>();
+        transform.GetChild(0).TryGetComponent(out slot_Image);
+        transform.GetChild(1).TryGetComponent(out slot_AmountText);
+        transform.GetChild(2).TryGetComponent(out slot_Sliderdurability);
+        transform.TryGetComponent(out slot_pos);
 
-        slot_Image.SetActive(false);
-        slot_AmountText.SetActive(false);
-        slot_Sliderdurability.SetActive(false);
+        slot_Image.gameObject.SetActive(false);
+        slot_AmountText.gameObject.SetActive(false);
+        slot_Sliderdurability.gameObject.SetActive(false);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -57,12 +57,10 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         selectionSlot.SetActive(true);
         selectionSlot.transform.position = transform.position;
 
-        Image image = slot_Image.GetComponent<Image>();
-
-        if (slot_Image.activeSelf)
+        if (!itemso.Equals(null))
         {
-            slot_display.SetEnterDisplay(image, _mname_kr, _mdescription);
-        }
+            slot_display.SetEnterDisplay(itemso.sprite, itemso.name_kr, itemso.description);
+        }        
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -71,26 +69,18 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         selectionSlot.SetActive(false);
         selectionSlot.transform.position = transform.position;
 
-        if (slot_Image.activeSelf)
+        if (!itemso.Equals(null))
         {
             slot_display.SetExitDisplay();
         }
 
     }
 
-
-    public void SetInfoDropItem(int id, string nameEng, string nameKr, HandAction handaction, bool stack, int maxstack, bool dura, string description)
+    public void SetInfoDropItem(ScriptableObject so)
     {
-        _mid = id;
-        _mimg_name = nameEng;
-        _mname_kr = nameKr;
-        _mhandAction = handaction;
-        _mstackable = stack;
-        _mmaxstack = maxstack;
-        _mdurability = dura;
-        _mdescription = description;
 
-        slot_Image.GetComponent<Image>().sprite = DataManager.Instance.SetSpriteFromNum(id);
+
+      //  slot_Image.GetComponent<Image>().sprite = DataManager.Instance.SetSpriteFromNum(id);
         // slot_AmountText.GetComponent<Text>().text;
         // 이건 수량 
 

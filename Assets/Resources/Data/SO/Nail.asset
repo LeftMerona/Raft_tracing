@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ed8a2fc1d385247802227ac3cd6078, type: 3}
+  m_Name: Nail
+  m_EditorClassIdentifier: 
+  id: 14
+  img_name: Nail
+  name_kr: "\uBABB"
+  handAction: 0
+  stackable: 1
+  maxstack: 20
+  durability: 0
+  description: "\uBB3C\uAC74\uC744 \uC815\uB9AC\uD560 \uB54C \uC88B\uC2B5\uB2C8\uB2E4"
+  sprite: {fileID: 21300000, guid: 3da2d5a62f577404da19860b7ee1e488, type: 2}
+  materials:
+  - materialName: Scrap
+    quantity: 2
+  category: RESOUCES

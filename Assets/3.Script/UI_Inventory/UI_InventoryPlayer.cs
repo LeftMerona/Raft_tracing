@@ -18,36 +18,21 @@ public class UI_InventoryPlayer : MonoBehaviour
     [SerializeField] private GameObject inventoryPrarent; 
     [SerializeField] private UI_Hotbar hotbar;
 
-
-
-
-
-
-
-
-
-
     public void InitInventory()
     {
         hotbar.InitHotbar();
-        inventoryslots = new UI_SlotSpace[15];
-        display.Init();
-        
+        inventoryslots = new UI_SlotSpace[15];        
 
         for (int i = 0; i < inventoryslots.Length; i++)
         {
             inventoryslots[i] = inventoryPrarent.transform.GetChild(i + 1).gameObject.AddComponent<UI_SlotSpace>();
             inventoryslots[i].InitSlot();
-            inventoryslots[i].SelectSlot = selectionSlot;
-            inventoryslots[i].Slot_Display = display;
+            inventoryslots[i].SetselectionSlot(selectionSlot, display);
         }
-
 
         for (int i = 0; i < hotbar.HotbarSlots.Length; i++)
         {
-            hotbar.HotbarSlots[i].SelectSlot = selectionSlot;
-            hotbar.HotbarSlots[i].Slot_Display = display;
-
+            hotbar.HotbarSlots[i].SetselectionSlot(selectionSlot, display);
         }
     }
 

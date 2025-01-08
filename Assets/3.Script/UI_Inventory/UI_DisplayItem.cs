@@ -5,41 +5,27 @@ using UnityEngine.UI;
 
 public class UI_DisplayItem : MonoBehaviour
 {
-    [SerializeField] private GameObject displayImageob;
-    [SerializeField] private GameObject displayNameob;
-    [SerializeField] private GameObject descriptionob;
+    // Ä³½ÌÇØµÎ°í ²¨µÎ°ÚÀ½ 
+    [SerializeField] private Image displayImage;
+    [SerializeField] private Text displayName;
+    [SerializeField] private Text description;
 
-    private Image displayImage;
-    private Text displayName;
-    private Text description;
-    
-    public void Init()
+    public void SetEnterDisplay(Sprite sprite, string name, string description)
     {
-        displayImage = displayImageob.GetComponent<Image>();
-        displayName = displayNameob.GetComponent<Text>();
-        description = descriptionob.GetComponent<Text>();
-
-        displayImageob.SetActive(false);
-        displayNameob.SetActive(false);
-        descriptionob.SetActive(false);
-    }
-
-    public void SetEnterDisplay(Image image, string name, string description)
-    {
-        displayImage.sprite = image.sprite;
+        displayImage.sprite = sprite;
         displayName.text = name;
         this.description.text = description;
 
-        displayImageob.SetActive(true);
-        displayNameob.SetActive(true);
-        descriptionob.SetActive(true);
+        displayImage.gameObject.SetActive(true);
+        displayName.gameObject.SetActive(true);
+        this.description.gameObject.SetActive(true);
     }
 
     public void SetExitDisplay()
     {
-        displayImageob.SetActive(false);
-        displayNameob.SetActive(false);
-        descriptionob.SetActive(false);
+        displayImage.gameObject.SetActive(false);
+        displayName.gameObject.SetActive(false);
+        description.gameObject.SetActive(false);
     }
 
 }

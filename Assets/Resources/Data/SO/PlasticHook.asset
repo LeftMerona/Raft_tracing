@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ed8a2fc1d385247802227ac3cd6078, type: 3}
+  m_Name: PlasticHook
+  m_EditorClassIdentifier: 
+  id: 2
+  img_name: PlasticHook
+  name_kr: "\uD50C\uB77C\uC2A4\uD2F1 \uACE0\uB9AC"
+  handAction: 2
+  stackable: 0
+  maxstack: 1
+  durability: 1
+  description: "\uBC14\uB2E4\uC5D0 \uB5A0\uC788\uB294 \uC4F0\uB808\uAE30\uB97C \uAC74\uC838
+    \uC62C\uB9B4\uB54C \uC774 \uB180\uB77C\uC6B4 \uC544\uC774\uD15C\uC744 \uC0AC\uC6A9\uD558\uC138\uC694!"
+  sprite: {fileID: 21300000, guid: 5d86b5bafba7d64429f9abcb131b9736, type: 2}
+  materials:
+  - materialName: Plank
+    quantity: 1
+  - materialName: Plastic
+    quantity: 2
+  category: TOOLS
