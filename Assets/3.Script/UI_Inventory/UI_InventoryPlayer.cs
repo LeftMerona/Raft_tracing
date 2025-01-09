@@ -11,6 +11,9 @@ public class UI_InventoryPlayer : MonoBehaviour
     // 슬롯 온마우스오바로  hover하고 
     // 이건 배열 해도 될거같고 리스트는 아닌거 같고 ㅇㅋ     
 
+
+    // 퀵슬롯이랑 매니저에서 연결해서 매니저에서 머 어떻게 하는쪽으로
+
     [SerializeField] GameObject selectionSlot; //넣어둬씀 
     [SerializeField] private UI_DisplayItem display;
 

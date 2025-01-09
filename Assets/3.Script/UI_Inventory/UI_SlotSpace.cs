@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,9 +11,17 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     //  드래그 이벤트 
     // 이건 틀만 있고  각각 상위 오브젝트에서 관리 해주는? 
 
+    // 퀵슬롯만 1로 할 예정 
+    private int slotType = 0;
+    public int SlotType { get => slotType; }
+    public void SetHotbarSlot()
+    {
+        slotType = 1;
+    }
 
     // 여기에 스크립트 요소들 다 넣어야되겟다 
     [SerializeField] private SoItemBase itemso;
+    public SoItemBase ItemSO { get => itemso; }
 
 
     [SerializeField] private Image slot_Image;
@@ -30,6 +37,7 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private UI_DisplayItem slot_display;
 
     private bool isSelect = false;
+
 
     public void SetselectionSlot(GameObject selectslot, UI_DisplayItem display)
     {
@@ -57,7 +65,7 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         selectionSlot.SetActive(true);
         selectionSlot.transform.position = transform.position;
 
-        if (!itemso.Equals(null))
+        if (itemso != null)
         {
             slot_display.SetEnterDisplay(itemso.sprite, itemso.name_kr, itemso.description);
         }        
@@ -69,7 +77,7 @@ public class UI_SlotSpace : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         selectionSlot.SetActive(false);
         selectionSlot.transform.position = transform.position;
 
-        if (!itemso.Equals(null))
+        if (itemso != null)
         {
             slot_display.SetExitDisplay();
         }
